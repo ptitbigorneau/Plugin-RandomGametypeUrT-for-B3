@@ -163,8 +163,6 @@ class RandomgametypeurtPlugin(b3.plugin.Plugin):
 
     def randomgametype(self):
 
-        ngametype = 0
-
         self.grandom()
 
         lgametype = gametype(self.nextgametype)
@@ -173,7 +171,7 @@ class RandomgametypeurtPlugin(b3.plugin.Plugin):
 
         thread.start_new_thread(self.wait, (60,))
 
-        self.console.write("g_gametype %s"%ngametype)
+        self.console.write("g_gametype %s"%(ngametype))
 
         if self.nextgametype in self._swaproleson:
         
