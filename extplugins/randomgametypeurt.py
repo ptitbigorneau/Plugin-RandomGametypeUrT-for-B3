@@ -71,7 +71,7 @@ class RandomgametypeurtPlugin(b3.plugin.Plugin):
             self.error('Could not find admin plugin')
             return False
         
-        self.registerEvent(b3.events.EVT_GAME_ROUND_START)
+        self.registerEvent(b3.events.EVT_GAME_MAP_CHANGE)
 
         self._adminPlugin.registerCommand(self, 'randomgametype',self._adminlevel, self.cmd_randomgametype)
 
@@ -104,7 +104,7 @@ class RandomgametypeurtPlugin(b3.plugin.Plugin):
 
     def onEvent(self, event):
         
-        if event.type == b3.events.EVT_GAME_ROUND_START:
+        if event.type == b3.events.EVT_GAME_MAP_CHANGE:
 
             if self._rgonoff == "on":
 
