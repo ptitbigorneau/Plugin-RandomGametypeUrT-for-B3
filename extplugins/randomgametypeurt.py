@@ -51,6 +51,11 @@ def gametype(cgametype):
         ngametype = 8
         mgametype='Bombmode'
 
+    if cgametype=="jump":
+
+        ngametype = 9
+        mgametype='Jump'
+
     return ngametype, mgametype
 
 class RandomgametypeurtPlugin(b3.plugin.Plugin):

@@ -2,7 +2,7 @@
 # Plugin for B3 (www.bigbrotherbot.com)
 # www.ptitbigorneau.fr
 
-randomgametypeurt B3 plugin (v1.0) for Urban Terror
+randomgametypeurt B3 plugin (v1.0.1) for Urban Terror
 
 Installation:
 
