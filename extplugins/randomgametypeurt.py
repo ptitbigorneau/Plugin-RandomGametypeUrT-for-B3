@@ -1,7 +1,7 @@
 # RandomGametypeUrT Plugin
 
 __author__  = 'PtitBigorneau www.ptitbigorneau.fr'
-__version__ = '1.0'
+__version__ = '1.0.2'
 
 import b3
 import b3.plugin
@@ -56,13 +56,18 @@ def gametype(cgametype):
         ngametype = 9
         mgametype='Jump'
 
+    if cgametype=="ft":
+
+        ngametype = 10
+        mgametype='Freeze Tag'
+
     return ngametype, mgametype
 
 class RandomgametypeurtPlugin(b3.plugin.Plugin):
     
     _adminPlugin = None
     _adminlevel = 100
-    _gametypes = "ffa lms tdm ts ctf bomb ftl cah"
+    _gametypes = "ffa lms tdm ts ctf bomb ftl cah ft"
     _swaproleson = "bomb"
     _rgonoff = "off"
     _test = None
